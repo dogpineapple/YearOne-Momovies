@@ -13,12 +13,12 @@ class Movie(db.Model):
 
     def handleRating(self, rating):
         """Handle the thumbs_up/thumbs_down count for a movie."""
-        if rating:
+        if rating == '1' or rating == 1:
             currVal = self.thumbs_up or 0
             self.thumbs_up = currVal + 1
         else:
             currVal = self.thumbs_down or 0
-            self.thumbs_down = currVal - 1
+            self.thumbs_down = currVal + 1
 
 
 def connect_db(app):
