@@ -24,8 +24,9 @@ def search_movie():
     """Search for movie(s). /movie/search?term=[term]"""
 
     term = request.args["term"]
+    page = request.args.get("page", 1)
     # hit the movie api.
-    querystring = {"api_key": api_key, "query": term}
+    querystring = {"api_key": api_key, "query": term, "page": page}
 
     res = requests.request("GET", f"{API_BASE_URL}/search/movie", params=querystring)
     print(res.json())
