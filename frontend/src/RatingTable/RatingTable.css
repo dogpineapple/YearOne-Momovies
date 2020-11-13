@@ -1,8 +1,8 @@
 .RatingTable {
-  border: 2px black solid;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .RatingTable > thead, tbody { 
@@ -10,5 +10,12 @@
 }
 
 .RatingTable th {
-  padding: 0rem 3rem;
+  padding: 0.5rem 3rem;
+  width: 13rem;
+}
+
+.RatingTable td {
+  background-color: rgb(77, 77, 77);
+  border-radius: 5px;
+  padding: 0.5rem 0rem;
 }

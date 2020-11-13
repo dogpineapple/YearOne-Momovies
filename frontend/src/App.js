@@ -3,12 +3,14 @@ import './App.css';
 import MovieDetail from './MovieDetail';
 import NotFound from './NotFound';
 import MovieListPage from './MovieListPage';
+import NavBar from './NavBar';
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
+        <NavBar />
         <Switch>
           <Route exact path="/movies/:id">
             <MovieDetail />

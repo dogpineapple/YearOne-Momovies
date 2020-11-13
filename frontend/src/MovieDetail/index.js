@@ -43,24 +43,25 @@ function MovieDetail() {
       {data &&
         <>
           <header className="MovieDetail-title">
-          <h1>{data.title}</h1>
-          <span>(Alt: {data.original_title})</span>
+            <h1>{data.title}</h1>
+            <span>(Alt: {data.original_title})</span>
           </header>
           <section className="MovieDetail-details">
-          <h4>Director: </h4>
-          <p>{data.director}</p>
-          <h4>Released date: </h4>
-          <p>{data.release_date ? data.release_date : "Unknown"}</p>
-          <div className="MovieDetails-description-container">
-            <h4>Overview</h4>
-            <p>{data.overview ? data.overview : "No description found."}</p>
-          </div>
+            <img src={data.poster_path ? `https://image.tmdb.org/t/p/original${data.poster_path}` : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/No_image_available_450_x_600.svg/450px-No_image_available_450_x_600.svg.png'} alt={data.title} />
+            <div className="MovieDetails-description-container">
+              <h4>Director: </h4>
+              <p>{data.director}</p>
+              <h4>Released date: </h4>
+              <p>{data.release_date ? data.release_date : "Unknown"}</p>
+              <h4>Overview</h4>
+              <p>{data.overview ? data.overview : "No description found."}</p>
+            </div>
           </section>
-          <p>What do you think about this movie?</p>
-          <RatingTable thumbs_up={data.thumbs_up} thumbs_down={data.thumbs_down}/>
-          <form >
-            <button value="1" onClick={handleRating}>Thumbs Up</button>
-            <button value="0" onClick={handleRating}>Thumbs Down</button>
+          <p className="MovieDetail-rating-title">What did you think about this movie?</p>
+          <RatingTable thumbs_up={data.thumbs_up} thumbs_down={data.thumbs_down} />
+          <form>
+            <button className="MovieDetail-up" value="1" onClick={handleRating}>Love it!</button>
+            <button className="MovieDetail-down" value="0" onClick={handleRating}>Nah!</button>
           </form>
         </>
       }
