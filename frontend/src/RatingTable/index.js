@@ -2,7 +2,7 @@ import "./RatingTable.css";
 
 function RatingTable({ thumbs_up, thumbs_down }) {
   return (
-    <table>
+    <table className="RatingTable">
       <thead>
         <tr>
           <th>Love it!</th>

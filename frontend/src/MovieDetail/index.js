@@ -42,14 +42,20 @@ function MovieDetail() {
     <div className="MovieDetail">
       {data &&
         <>
+          <header className="MovieDetail-title">
           <h1>{data.title}</h1>
-          <span>({data.original_title})</span>
-          <p>Director: {data.director}</p>
-          <p>Released date: {data.release_date ? data.release_date : "Unknown"}</p>
-          <div>
-            <h4>Description</h4>
+          <span>(Alt: {data.original_title})</span>
+          </header>
+          <section className="MovieDetail-details">
+          <h4>Director: </h4>
+          <p>{data.director}</p>
+          <h4>Released date: </h4>
+          <p>{data.release_date ? data.release_date : "Unknown"}</p>
+          <div className="MovieDetails-description-container">
+            <h4>Overview</h4>
             <p>{data.overview ? data.overview : "No description found."}</p>
           </div>
+          </section>
           <p>What do you think about this movie?</p>
           <RatingTable thumbs_up={data.thumbs_up} thumbs_down={data.thumbs_down}/>
           <form >

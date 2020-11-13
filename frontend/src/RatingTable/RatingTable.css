@@ -1,0 +1,14 @@
+.RatingTable {
+  border: 2px black solid;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.RatingTable > thead, tbody { 
+  font-size: 1.6rem;
+}
+
+.RatingTable th {
+  padding: 0rem 3rem;
+}

@@ -1,0 +1,11 @@
+.SearchForm > * {
+  padding: 0.7rem;
+  border-radius: 7px;
+  margin: 2px;
+  border: none;
+  font-size: 1.8rem;
+}
+.SearchForm > button {
+  background-color: rgb(88, 146, 255);
+  color: white;
+}

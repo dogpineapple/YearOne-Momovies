@@ -1,0 +1,22 @@
+.MovieListCard {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 0.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.MovieListCard > a {
+  color: rgb(61, 136, 248);
+}
+
+.MovieListCard img {
+  height: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.MovieListCard > a:hover {
+  color: rgb(156, 183, 224);
+  transition: ease 0.3s;
+}

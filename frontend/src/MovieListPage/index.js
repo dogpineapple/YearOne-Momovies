@@ -21,7 +21,7 @@ function MovieListPage({ movies }) {
     } else {
       setData({ movies: movieResults.results, totalPages: movieResults.total_pages, totalResults: movieResults.total_results, searchedTerm: term });
       if (movieResults.results.length === 0) {
-        setAlerts(["No movies found! :( Try another search."])
+        setAlerts(["No movies found! :("])
       }
     }
   }
@@ -35,11 +35,18 @@ function MovieListPage({ movies }) {
   for (let i = 1; i <= data.totalPages; i++) {
     pageNumbers.push(i);
   }
-  
+
   return (
     <div className="MovieListPage">
+      <header className="MovieListPage-header">
+      <p className="MovieListPage-about">The Movie Search Engine</p>
+      <h1><span>Momo</span>vies</h1>
+      <p className="MovieListPage-credits">powered by TMDB</p>
+      </header>
       <SearchForm searchApi={searchApi} />
-      <form>
+      <section className="MovieListPage-pages-container">
+      <form className="MovieListPage-page-form">
+        <label>Page: </label>
         <select onChange={handlePageChange}>
           {pageNumbers.map(num => {
             return <option key={num} value={num}>{num}</option>
@@ -47,7 +54,8 @@ function MovieListPage({ movies }) {
         </select>
       </form>
       {alerts.length !== 0 && alerts.map(alert => <Alert key={alert} alert={alert} />)}
-      {data.totalResults !== 0 && <span>{data.totalResults} movies found!</span>}
+      {data.totalResults !== 0 && <p className="MovieListPage-ttl-results">{data.totalResults} movies found!</p>}
+      </section>
       <MovieList movies={data.movies} />
     </div>
   );

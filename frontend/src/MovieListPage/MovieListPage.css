@@ -1,0 +1,39 @@
+.MovieListPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+
+
+.MovieListPage-header > h1 {
+  font-size: 5rem;
+}
+
+.MovieListPage-header > h1 > span {
+  color: rgb(175, 212, 255);
+}
+
+.MovieListPage-about {
+  font-size: 1.6rem;
+}
+
+.MovieListPage-credits {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.MovieListPage-header {
+  margin: 3rem;
+}
+
+.MovieListPage-pages-container{
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.MovieListPage-pages-container > * {
+  margin: 1.5rem 1rem;
+}

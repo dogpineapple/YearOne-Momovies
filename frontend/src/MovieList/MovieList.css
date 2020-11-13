@@ -1,0 +1,17 @@
+.MovieList-empty {
+  font-size: 2rem;
+  color: rgb(175, 212, 255);
+}
+
+.MovieList {
+  width: 75%;
+  min-width: 50rem;
+  margin: auto;
+  text-align: center;
+}
+
+.MovieList > li {
+  display:inline-block;
+  min-width: 15rem;
+  max-width: 20rem;
+}
