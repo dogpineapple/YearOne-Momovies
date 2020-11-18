@@ -1,13 +1,18 @@
 .MovieListCard {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(41, 39, 46);
+  box-shadow: 0px 1px 4px 2px rgb(85, 75, 75);
   border-radius: 5px;
   margin: 0.5rem;
   font-size: 1.7rem;
   text-align: center;
 }
 
-.MovieListCard > a {
-  color: rgb(61, 136, 248);
+.MovieListCard-title {
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  color: rgb(236, 236, 236);
+  padding: 2px;
 }
 
 .MovieListCard img {

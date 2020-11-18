@@ -4,7 +4,11 @@ import MovieDetail from './MovieDetail';
 import NotFound from './NotFound';
 import MovieListPage from './MovieListPage';
 import NavBar from './NavBar';
+import Contact from './Contact';
 
+/**
+ * App component hosts the routing for the app.
+ */
 function App() {
 
   return (
@@ -22,6 +26,7 @@ function App() {
             <NotFound />
           </Route>
         </Switch>
+        <Contact />
       </BrowserRouter>
     </div>
   );

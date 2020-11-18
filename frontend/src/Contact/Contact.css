@@ -1,0 +1,10 @@
+.Contact {
+  margin: auto;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 5rem 0rem 2rem 0rem;
+}
+
+.Contact a {
+  color: rgb(175, 212, 255);
+}

@@ -11,7 +11,7 @@
 }
 
 .MovieDetail-title > h1 {
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-size: 4rem;
   font-weight: 200;
 }
@@ -55,7 +55,7 @@
 }
 
 .MovieDetail-rating-title {
-  margin-top: 2rem;
+  margin-top: 4rem;
   font-size: 1.6rem;
 }
 
