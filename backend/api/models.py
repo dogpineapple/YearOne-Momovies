@@ -16,9 +16,11 @@ class Movie(db.Model):
         if rating == '1' or rating == 1:
             currVal = self.thumbs_up or 0
             self.thumbs_up = currVal + 1
-        else:
+        elif rating == '0' or rating == 0:
             currVal = self.thumbs_down or 0
             self.thumbs_down = currVal + 1
+        else:
+            raise Exception('Invalid rating value. Must be 1 or 0.')
 
 
 def connect_db(app):
