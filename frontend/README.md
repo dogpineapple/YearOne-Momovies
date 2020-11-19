@@ -1,3 +1,22 @@
+# Momovies Frontend 
+This is the frontend folder for the web application 'Momovies'. If you would like to view the backend, please visit:
+Backend: https://github.com/dogpineapple/YearOne-Momovies/tree/main/backend
+
+# Frontend Set Up
+1. In the `frontend` folder, install the dependencies with the command `npm install package-lock.json`
+2. To start up the server locally, use the command `npm start`. This will host on localhost:3000
+3. `npm start` should automatically open localhost:3000 on your browser. Make sure that the backend server is running before use!
+
+# Technologies Used
+React.js (with CRA)
+
+# Future Considerations/To-dos
+Add frontend tests with React Testing Library
+Use SASS to DRY up CSS
+Implement Redux or Context (minor prop drilling exists in some components)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

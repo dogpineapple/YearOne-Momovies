@@ -24,7 +24,7 @@ function MovieListPage({ movies }) {
         }
       }
     } catch (err) {
-      setAlerts(["Server Offline: Refused to connect."]);
+      setAlerts(["Server offline: Refused to connect."]);
     }
   }
 
