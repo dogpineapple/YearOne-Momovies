@@ -2,7 +2,7 @@ import './Contact.css';
 
 
 /**
- * Contact component to display contact information
+ * Contact component to display contact information to github
  */
 function Contact() {
   return (

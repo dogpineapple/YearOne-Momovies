@@ -19,6 +19,9 @@ function App() {
           <Route exact path="/movies/:id">
             <MovieDetail />
           </Route>
+          <Route exact path="/search">
+            <MovieListPage />
+          </Route>
           <Route exact path="/">
             <MovieListPage />
           </Route>

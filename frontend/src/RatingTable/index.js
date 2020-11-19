@@ -1,5 +1,9 @@
 import "./RatingTable.css";
 
+/**
+ * RatingTable renders the number of `thumbs_up` and `thumbs-down`
+ * in a table.
+ */
 function RatingTable({ thumbs_up, thumbs_down }) {
   return (
     <table className="RatingTable">

@@ -1,5 +1,11 @@
 import './MovieListCard.css';
 
+/**
+ * MovieListCard expects (a movie's) id, title, posterPath.
+ * 
+ * Renders a list item with a link to the movie's detail page, 
+ * poster image, and movie title.
+ */
 function MovieListCard({ id, title, posterPath }) {
   return (
     <li className="MovieListCard">

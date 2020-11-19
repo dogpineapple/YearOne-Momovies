@@ -1,9 +1,13 @@
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './SearchForm.css';
 
-
-function SearchForm({ searchApi }) {
+/**
+ * SearchForm renders a controlled form for search term.
+ */
+function SearchForm({ searchApi, setAlerts }) {
   const [formData, setFormData] = useState({term: ""});
+  const history = useHistory();
 
   const handleChange = (evt) => {
     const { name, value } = evt.target;
@@ -12,7 +16,12 @@ function SearchForm({ searchApi }) {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    searchApi(formData.term);
+    if (formData.term) {
+      searchApi(formData.term);
+      history.push(`/search?term=${formData.term}&page=${1}`);
+    } else {
+      setAlerts(["Please enter a search term!"])
+    }
   }
   return (
     <form onSubmit={handleSubmit} className="SearchForm">

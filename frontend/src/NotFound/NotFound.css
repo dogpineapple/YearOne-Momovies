@@ -1,0 +1,18 @@
+.NotFound {
+  text-align: center;
+  padding: 7rem;
+}
+
+.NotFound > h1 {
+  font-weight: 300;
+  font-size: 4rem;;
+}
+
+.NotFound-contact > a{
+  color: rgb(175, 212, 255);
+}
+
+.NotFound-contact {
+  margin: 1rem;
+  font-size: 1.6rem;
+}

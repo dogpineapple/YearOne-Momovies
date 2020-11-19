@@ -5,10 +5,19 @@ import './MovieDetail.css';
 
 const BASE_URL = "http://localhost:5000";
 
+/**
+ * MovieDetail renders a movie's details, form for rating a movie, 
+ * and the RatingTable component.
+ * 
+ * Handles contact to backend API:
+ *    - fetchDetails() pings the GET `/movies/:id` endpoint.
+ *    - handleRating() pings the POST `/movies/:id/rate` endpoint.
+ */
 function MovieDetail() {
   const [data, setData] = useState();
   const { id } = useParams();
 
+  // fetches the movie detail data upon mounting.
   useEffect(function handleFetchDetails() {
     async function fetchDetails() {
       let res = await fetch(`${BASE_URL}/movies/${id}`);
@@ -20,6 +29,7 @@ function MovieDetail() {
     fetchDetails();
   }, [id]);
 
+  // pings backend api to register a rating submission for the movie.
   const handleRating = async (evt) => {
     evt.preventDefault();
     const { value } = evt.target;
