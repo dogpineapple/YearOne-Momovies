@@ -5,7 +5,7 @@ Frontend: https://github.com/dogpineapple/YearOne-Momovies/tree/main/frontend
 # Backend Set Up
 1. In the `backend` folder, create your virtual environment by using the command `python3 -m venv venv`. This will create a venv folder.
 2. Activate the venv folder by using the command `source venv/bin/activate`. This will activate your venv.
-3. Now you are ready to install the dependencies by using the command `pip install requirements.txt`.
+3. Now you are ready to install the dependencies by using the command `pip install -r requirements.txt`.
 4. !IMPORTANT! Create the PostgreSQL database for the application! In the PostgreSQL, use `CREATE DATABASE momovies`.
 5. Create a `.env` file in the `api` folder and set `API_KEY` and `API_BASE_URL`  environmental variables. This application uses The Movie DB
 The Movie DB: https://developers.themoviedb.org/3/getting-started/introduction
