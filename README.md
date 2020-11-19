@@ -1,6 +1,6 @@
 # Momovies
-MOMOVIES GIF DEMO: https://recordit.co/KTFqfHu5Gc
-INVALID SEARCH GIF DEMO: https://recordit.co/Vn8rtg16Qp
+MOMOVIES GIF DEMO: https://recordit.co/KTFqfHu5Gc <br />
+INVALID SEARCH GIF DEMO: https://recordit.co/Vn8rtg16Qp <br />
 404 GIF DEMO: https://recordit.co/toQlED8Pbb 
 
 Momovies is a simple movie web application that uses TheMovieDB API. 
